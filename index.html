@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="title__container">
+			<h1 id="title">Survey Form</h1>
+			<p id="description">Please take the servey down below and help us improve</p>
+		    </div>
+	<main class="main__container">
+		<form id="survey-form">
+			
+		    <div class="data__input">
+				<label  for="name" class="name__label" id="name-label" autofocus>Name
+				<input type="text" name="full__name" id="name" required maxlength="20" placeholder="Please enter your name" class="input__data">
+				</label>
+				<label for="email" class="email__label" id="email-label">Email
+				<input type="email" name="email" id="email" required maxlength="30" placeholder="Please enter your email" class="input__data">
+				</label>
+				<label class="age__form" for="age" id="number-label">Age(optional)
+				<input type="number" name="age" id="number" min="12" max="90" placeholder="Please enter your age" class="input__data">
+				</label>
+			</div>
+			<div class="dropdown__list data__input">
+				<label class="user__role">Please select a role that describes you!
+				<select name="role" id="dropdown" class="input__data">
+				<option value="Student">Student</option>
+				<option value="Full Time Job">Full Time Job</option>
+				<option value="Free Lancer">Free Lancer</option>
+				<option value="Prefer not to say">Prefer not to say</option>
+				</select>
+				</label>
+			</div>
+			<div class="prefer__radio"><p>Would you recommend this product to anyone?</p>
+				<label class="prefer__label">
+					<input type="radio" name="prefer" value="Definetly">
+					Definetly!
+				</label>
+				<label class="prefer__label">
+					<input type="radio" name="prefer" value="Maybe">
+					Maybe!
+				</label>
+				<label class="prefer__label">
+					<input type="radio" name="prefer" value="No">
+					No!
+				</label>
+			</div>
+			<div class="check__boxes">
+				<p>What would you like to read about in future?</p>
+				<label>
+				<input type="checkbox" name="preference" value="1">
+				Web3
+				</label>
+				<label>
+				<input type="checkbox" name="preference" value="2">
+				Blockchain
+				</label>
+				<label>
+				<input type="checkbox" name="preference" value="3">
+				Solidity
+				</label>
+				<label>
+				<input type="checkbox" name="preference" value="4">
+				Soft Skills
+				</label>
+				<label>
+				<input type="checkbox" name="preference" value="5">
+				CSS
+				</label>
+				<label>
+				<input type="checkbox" name="preference" value="6">
+				Web
+				</label>
+			</div>
+			<div class="comments__text">
+				<p class="text__comment">Any comments or suggestions are appreciated!</p>
+				<textarea placeholder="Enter comments here...." cols="2"
+				rows="1" maxlength="200"></textarea> 
+			</div>
+			<div class="container__button">
+			<button id="submit" type="submit">Submit</button>
+			</div>
+		</form>
+	</main>
+</body>
+</html>
