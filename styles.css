@@ -116,7 +116,7 @@ button:hover {
   color: #fff;
   background-color: #2ee59d;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   body {
     font-size: 2.2rem;
   }
